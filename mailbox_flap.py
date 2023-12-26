@@ -1,5 +1,6 @@
 from build123d import *
 from ocp_vscode import *
+set_defaults(helper_scale=1, transparent=True)
 
 class Flap(Compound):
     """Flap
@@ -73,4 +74,5 @@ mailbox_flap = Flap(
     topband_height=4 * MM,
 )
 # mailbox_flap.export_step("clapet_bal.step")
-show(mailbox_flap)
+# show(mailbox_flap)
+show_all()
